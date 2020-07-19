@@ -1,0 +1,10 @@
+comandos úteis para angular.
+
+	OBS: todos os comandos devem ser usados sem as tags"<>"
+
+##starta aplicação local na porta default##
+npm start
+
+##comando para criar componente##
+ng g c <caminho/da/pasta/nome-do-componente>
+
