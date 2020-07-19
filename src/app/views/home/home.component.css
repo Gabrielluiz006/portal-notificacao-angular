@@ -1,0 +1,54 @@
+ .toolbar {
+  background:#3F51B5;
+  color: #fff;
+  box-shadow: 0px 1px 6px rgb(24, 22, 22);
+  position: fixed;
+}
+
+.div-navbar{
+  padding-bottom: 7px;
+}
+
+/*css do sidenav*/
+ .example-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #FFFFFF;
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+.sidenav-title{
+  font-family: Roboto,Helvetica Neue,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+/*css do sidenav*/
+
+/*css do tab*/
+.div-tabs{
+  width: 600px; 
+  padding-left: 30%; 
+  position: relative;
+}
+
+.example-stretched-tabs {
+  max-width: 800px;
+}
+/*css do tab*/
+
+.tab-1{
+  padding-left: 50%;
+  
+}
+

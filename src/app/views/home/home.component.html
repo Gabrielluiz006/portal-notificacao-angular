@@ -1,0 +1,36 @@
+<div class="div-navbar">
+    <mat-toolbar>
+        <mat-toolbar-row class="toolbar">
+            <div class="example-sidenav-content">
+                <button style="background-color: #7888dd;" mat-mini-fab mat-button (click)="navside.toggle()">
+                    <mat-icon style="color:rgb(32, 18, 16)" >menu</mat-icon>
+                </button>
+                </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</div>
+    <mat-drawer-container class="example-container" autosize>
+        <mat-drawer #navside class="example-sidenav" mode="side">
+            <div class="sidenav-title">
+                <h2 >Painel</h2>
+            </div>
+            <mat-divider></mat-divider>
+            <mat-nav-list>
+                <a mat-list-item (click)="alternarComponete(2)">Gestores de lojas</a>
+                <a mat-list-item (click)="alternarComponete(3)">notificações</a>
+            </mat-nav-list>
+        </mat-drawer>
+        <div class="div-tabs" *ngIf='flagComponentHome'>
+            <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
+                <mat-tab label="First" (click)="botao.toggle()">
+                    conteudo 1
+                </mat-tab>
+                <mat-tab label="Second">
+                     Content 2
+                 </mat-tab>
+            </mat-tab-group>
+        </div>
+        <div *ngIf='flagComponentLoja'>
+            <app-form-cad-loja-component></app-form-cad-loja-component>
+        </div>
+    </mat-drawer-container>
